@@ -1,0 +1,17 @@
+<h1> Lista opere inserite</h1>
+
+<ul>
+    {% for autore in autori %}
+        <li>{{ autore.nome|e }}</li>
+        <form action='/cercaOpereAutore' method='post'>
+            <button type='submit' name='tasto' class='buttonClass' value='{{autore.id}}'>lista Opere</button>  
+        </form>
+    {% endfor %}
+</ul>
+ 
+
+<form action='/tornaHome' method='post' >
+    <div> <button type='submit' name='backName2' > << Indietro</button> </div>
+</form>
+    
+    

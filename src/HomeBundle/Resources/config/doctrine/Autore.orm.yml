@@ -1,0 +1,17 @@
+HomeBundle\Entity\Autore:
+    type: entity
+    table: null
+    repositoryClass: HomeBundle\Repository\AutoreRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nome:
+            type: string
+            length: 255
+        eta:
+            type: integer
+    lifecycleCallbacks: {  }

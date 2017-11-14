@@ -1,0 +1,24 @@
+<h1> Tabella{{tabella}} in Db</h1>
+
+<ul>
+    {% for tupla in arrTupla %} 
+       <table>
+         
+          {% for val in tupla %}
+               {{ val }} &nbsp
+           {% endfor %}
+    {% endfor %}
+             </br>
+             
+        </table>
+        
+</ul>
+ 
+
+
+    
+<form action='/tornaHome' method='post' >
+    <div> <button type='submit' name='backName2' > << Indietro</button> </div>
+</form>
+    
+    

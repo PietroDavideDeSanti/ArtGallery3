@@ -1,0 +1,25 @@
+HomeBundle\Entity\Opera:
+    type: entity
+    table: null
+    repositoryClass: HomeBundle\Repository\OperaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titolo:
+            type: string
+            length: 255
+        tecnica:
+            type: string
+            length: 255
+        dimensioni:
+            type: integer
+        data:
+            type: date
+        idAutore:
+            type: integer
+            column: id_autore
+    lifecycleCallbacks: {  }

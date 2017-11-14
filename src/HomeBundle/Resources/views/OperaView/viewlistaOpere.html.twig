@@ -1,0 +1,23 @@
+<h1> Lista opere inserite</h1>
+
+<ul>
+    {% for opera in opere %}
+        <li>
+            {{ opera.titolo|e }}</br>{{opera.tecnica}}</br>{{opera.dimensioni}}</br>{{opera.nome}}</br>
+            <form action='/dettagliAutore' method='post'>
+                <button type='submit' name='tasto' class='buttonClass' value='{{opera.id_autore}}'>dettagli autore</button>
+            </form>
+        </li>
+        </br>
+        </br>
+    {% endfor %}
+</ul>
+ 
+
+
+    
+<form action='/tornaHome' method='post' >
+    <div> <button type='submit' name='backName2' > << Indietro</button> </div>
+</form>
+    
+    
